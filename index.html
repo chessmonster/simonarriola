@@ -1,146 +1,51 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="container">
-  
-        <div class="row">
+<head>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Josefin+Slab" />
+</head>
 
-            <div class="col-md-3">
-                <ul class="nav nav-pills nav-stacked admin-menu" >
-                    <li class="active"><a href="" data-target-id="profile"><i class="glyphicon glyphicon-user"></i> Profile</a></li>
-                    <li><a href="" data-target-id="change-password"><i class="glyphicon glyphicon-lock"></i> Change Password</a></li>
-                    <li><a href="" data-target-id="settings"><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
-                    <li><a href="" data-target-id="logout"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
-                </ul>
-            </div>
+<body>
 
-            <div class="col-md-9  admin-content" id="profile">
-                <div class="panel panel-info" style="margin: 1em;">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Name</h3>
-                    </div>
-                    <div class="panel-body">
-                        Ashish Patel
-                    </div>
-                </div>
-                <div class="panel panel-info" style="margin: 1em;">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Email</h3>
-                    </div>
-                    <div class="panel-body">
-                        ashishpatel0720@gmail.com
-                    </div>
-                </div>
-                <div class="panel panel-info" style="margin: 1em;">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Last Password Change</h3>
+  <div class="container">
+    <div class="circle"><img src="http://d2f0ora2gkri0g.cloudfront.net/bkpam2342416_argeprojeegitimesnasndahallerim-1.jpg" /></div>
+    <div class="circle2"><img src="http://d2f0ora2gkri0g.cloudfront.net/bkpam2342416_argeprojeegitimesnasndahallerim-1.jpg" /></div>
+    
+    
+    <div class="card">
+      <div class="text">
 
-                    </div>
-                    <div class="panel-body">
-                        4 days Ago
-                    </div>
-                </div>
-
-            </div>
-   <div class="col-md-9  admin-content" id="settings">
-                <div class="panel panel-info" style="margin: 1em;">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Notification</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="label label-success">allowed</div>
-                    </div>
-                </div>
-                <div class="panel panel-info" style="margin: 1em;">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Newsletter</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="badge">Monthly</div>
-                    </div>
-                </div>
-                <div class="panel panel-info" style="margin: 1em;">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Admin</h3>
-
-                    </div>
-                    <div class="panel-body">
-                         <div class="label label-success">yes</div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-9  admin-content" id="change-password">
-                <form action="/password" method="post">
-
-           
-                    <div class="panel panel-info" style="margin: 1em;">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><label for="new_password" class="control-label panel-title">New Password</label></h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control" name="password" id="new_password" >
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-             
-                    <div class="panel panel-info" style="margin: 1em;">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><label for="confirm_password" class="control-label panel-title">Confirm password</label></h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control" name="password_confirmation" id="confirm_password" >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-           
-                    <div class="panel panel-info border" style="margin: 1em;">
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <div class="pull-left">
-                                    <input type="submit" class="form-control btn btn-primary" name="submit" id="submit">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
-            </div>
-
-            <div class="col-md-9  admin-content" id="settings"></div>
-
-            <div class="col-md-9  admin-content" id="logout">
-                <div class="panel panel-info" style="margin: 1em;">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Confirm Logout</h3>
-                    </div>
-                    <div class="panel-body">
-                        Do you really want to logout ?  
-                        <a  href="#" class="label label-danger"
-                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                            <span >   Yes   </span>
-                        </a>    
-                        <a href="/account" class="label label-success"> <span >  No   </span></a>
-                    </div>
-                    <form id="logout-form" action="#" method="POST" style="display: none;">
-                    </form>
-
-
-
-                </div>
-            </div>
+        <div class="titles">
+          <h1>HARUN PEHLİVAN</h1>
+          <h2> FOUNDER,CEO BLOGGER</h2>
         </div>
-</div>
+
+        <br />
+        <h3 id="bio">About Me</h3>
+        <h3 id="bio-expand"><a href="http://harunpehlivantebimtebitagem.ml" target="_blank"> HARUN PEHLİVAN</a></h3>
+        <br />
+
+        <div class="contact">
+          <a href="https://www.udemy.com/user/harunpehlivan2/" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i> UDEMY</a>
+          <br />
+          <a><i class="fa fa-map-marker" aria-hidden="true"></i> AMASYA, TR</a>
+          <br />
+          <a href="mailto:trcmnhp@hotmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> trcmnhp@hotmail.com</a>
+        </div>
+
+        <br />
+        <div class="social">
+
+          <div class="one"><a href="https://tebm.wordpress.com" target="_blank"><i class="fa fa-wordpress" aria-hidden="true"></i></a></div>
+
+          <div class="two"><a href="https://codepen.io/harunpehlivan/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></div>
+
+          <div class="three"><a href="https://www.instagram.com/harunpehlivantebimtebitagem" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
